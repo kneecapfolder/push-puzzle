@@ -4,7 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>c:/Users/ilan7/OneDrive/Plocha/projects/puzzle game/Content/.sprites/spritesheet.png</File>
+    <File>c:/Users/ilan7/OneDrive/Plocha/projects/C#/puzzle game/Content/.sprites/spritesheet.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

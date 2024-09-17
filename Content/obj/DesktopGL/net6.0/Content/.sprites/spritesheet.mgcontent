@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>c:/Users/ilan7/OneDrive/Plocha/projects/puzzle game/Content/.sprites/spritesheet.png</SourceFile>
-  <SourceTime>2024-09-17T21:58:47.5030584+03:00</SourceTime>
-  <DestFile>c:/Users/ilan7/OneDrive/Plocha/projects/puzzle game/Content/bin/DesktopGL/Content/.sprites/spritesheet.xnb</DestFile>
-  <DestTime>2024-09-17T22:28:39.3156306+03:00</DestTime>
+  <SourceFile>c:/Users/ilan7/OneDrive/Plocha/projects/C#/puzzle game/Content/.sprites/spritesheet.png</SourceFile>
+  <SourceTime>2024-09-18T00:54:30.1968393+03:00</SourceTime>
+  <DestFile>c:/Users/ilan7/OneDrive/Plocha/projects/C#/puzzle game/Content/bin/DesktopGL/Content/.sprites/spritesheet.xnb</DestFile>
+  <DestTime>2024-09-18T00:54:51.9376197+03:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T14:44:56+03:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

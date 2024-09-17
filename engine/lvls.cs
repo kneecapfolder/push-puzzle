@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,13 +14,13 @@ public class Lvl
 
     public void Draw(SpriteBatch spriteBatch)
     {
-        Console.WriteLine(Layout.Length + ',' + Layout[0].Length);
         for(int i = 0; i < 12; i++)
             for(int j = 0; j < 12; j++)
                 if (Layout[i][j] != 0)
                     spriteBatch.Draw(
                         Puzzle.spriteSheet,
                         new Rectangle(i * 80, j * 80, 80, 80),
+                        new Rectangle((Layout[i][j]-1) * 16, 16, 16, 16),
                         Color.White
                     );
     }
