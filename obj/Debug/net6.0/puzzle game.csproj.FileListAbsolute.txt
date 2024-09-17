@@ -24,3 +24,4 @@ c:\Users\ilan7\OneDrive\Plocha\projects\puzzle game\obj\Debug\net6.0\puzzle game
 c:\Users\ilan7\OneDrive\Plocha\projects\puzzle game\obj\Debug\net6.0\puzzle game.genruntimeconfig.cache
 c:\Users\ilan7\OneDrive\Plocha\projects\puzzle game\obj\Debug\net6.0\ref\puzzle game.dll
 c:\Users\ilan7\OneDrive\Plocha\projects\puzzle game\bin\Debug\net6.0\Content\.sprites\spritesheet.xnb
+c:\Users\ilan7\OneDrive\Plocha\projects\puzzle game\obj\Debug\net6.0\puzzle game.sourcelink.json

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 using Microsoft.Xna.Framework;
@@ -12,8 +13,9 @@ public class Puzzle : Game
     private GraphicsDeviceManager graphics;
     private SpriteBatch spriteBatch;
 
-    private Texture2D spriteSheet;
+    public static Texture2D spriteSheet;
     private List<Lvl> lvls;
+    private Lvl level;
 
     public Puzzle()
     {
@@ -28,7 +30,10 @@ public class Puzzle : Game
         graphics.PreferredBackBufferWidth = 960;
         graphics.PreferredBackBufferHeight = 960;
         graphics.ApplyChanges();
+        
         lvls = Read<List<Lvl>>("../../../data/lvls.json");
+        level = lvls[0];
+        Console.WriteLine(level?.Name);
 
         base.Initialize();
     }
@@ -53,9 +58,14 @@ public class Puzzle : Game
 
     protected override void Draw(GameTime gameTime)
     {
-        GraphicsDevice.Clear(Color.CornflowerBlue);
+        GraphicsDevice.Clear(Color.Black);
 
         // TODO: Add your drawing code here
+        spriteBatch.Begin(samplerState: SamplerState.PointClamp);
+
+        level.Draw(spriteBatch);
+
+        spriteBatch.End();
 
         base.Draw(gameTime);
     }
