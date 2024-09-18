@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj": {}
+    "c:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj": {
+    "c:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj",
+        "projectUniqueName": "c:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj",
         "projectName": "puzzle game",
-        "projectPath": "C:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj",
+        "projectPath": "c:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\puzzle game.csproj",
         "packagesPath": "C:\\Users\\ilan7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\obj\\",
+        "outputPath": "c:\\Users\\ilan7\\OneDrive\\Plocha\\projects\\C#\\puzzle game\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

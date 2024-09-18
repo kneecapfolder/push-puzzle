@@ -16,6 +16,9 @@ public class Puzzle : Game
     public static Texture2D spriteSheet;
     private List<Lvl> lvls;
     private Lvl level;
+    private KeyboardState lastState;
+
+    private Player player = new Player(Vector2.Zero);
 
     public Puzzle()
     {
@@ -33,7 +36,8 @@ public class Puzzle : Game
         
         lvls = Read<List<Lvl>>("../../../data/lvls.json");
         level = lvls[0];
-        Console.WriteLine(level?.Name);
+
+        lastState = Keyboard.GetState();
 
         base.Initialize();
     }
@@ -52,6 +56,27 @@ public class Puzzle : Game
             Exit();
 
         // TODO: Add your update logic here
+        if (lastState.IsKeyUp(Keys.W) && Keyboard.GetState().IsKeyDown(Keys.W))
+        {
+            player.pos.Y--;
+            player.dir = 2;
+        }
+        if (lastState.IsKeyUp(Keys.S) && Keyboard.GetState().IsKeyDown(Keys.S))
+        {
+            player.pos.Y++;
+            player.dir = 0;
+        }
+        if (lastState.IsKeyUp(Keys.A) && Keyboard.GetState().IsKeyDown(Keys.A))
+        {
+            player.pos.X--;
+            player.dir = 3;
+        }
+        if (lastState.IsKeyUp(Keys.D) && Keyboard.GetState().IsKeyDown(Keys.D))
+        {
+            player.pos.X++;
+            player.dir = 1;
+        }
+        lastState = Keyboard.GetState();
 
         base.Update(gameTime);
     }
@@ -64,6 +89,7 @@ public class Puzzle : Game
         spriteBatch.Begin(samplerState: SamplerState.PointClamp);
 
         level.Draw(spriteBatch);
+        player.Draw(spriteBatch);
 
         spriteBatch.End();
 
